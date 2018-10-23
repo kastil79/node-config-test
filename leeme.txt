@@ -1,0 +1,20 @@
+Por defecto lee el config/default.json
+======================================
+$ npm start  
+output===> { user: 'root', password: 'root' }
+
+
+Para que lea el config/staging.json
+=================================
+$ NODE_ENV=staging npm start    
+output ==> { user: 'heberth', password: '12345678' }
+
+
+Si queremos que el password sea personalizado
+===============================================
+$ NODE_ENV=staging npm start    
+Output ==>  { user: 'heberth', password: 'pepito' }
+
+
+ $ DB_PASSWORD='pepito' npm start
+Output ==>  { user: 'root', password: 'pepito' }
